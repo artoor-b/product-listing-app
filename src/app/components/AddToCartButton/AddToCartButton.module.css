@@ -1,0 +1,14 @@
+.add-to-cart-button {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  width: 100px;
+  height: 30px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.add-to-cart-button:hover {
+  cursor: pointer;
+}

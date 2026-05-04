@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) assignment project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Set up Environment Variables
+   To connect the application to the backend API, you must configure your environment variables.
+
+Locate the env.example file in the root directory.
+
+Rename this file to .env.
+
+Open the newly created .env file and populate the missing values for the following keys:
+
+```bash
+# The base URL for the backend API
+API_HOST=your_api_host_url
+
+# Your secure API authentication key
+X_API_KEY=your_api_key
+```
+
+2. You can regenerate TS types from 'product-listing-app/src/types/columbus-recruitment.schema.json' (in case of future changes) with usage of:
+
+```bash
+npm run generate:types
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Page with product list](https://github.com/artoor-b/product-listing-app/blob/main/docs/Screenshot%202026-05-05%20at%2000.11.08.png)
+![Product list page with cart summary opened](https://github.com/artoor-b/product-listing-app/blob/main/docs/Screenshot%202026-05-05%20at%2000.11.30.png)
+![Product list page with empty cart summary opened](https://github.com/artoor-b/product-listing-app/blob/main/docs/Screenshot%202026-05-05%20at%2000.11.44.png)
